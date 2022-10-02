@@ -1,0 +1,20 @@
+.caja {
+    border: 1px solid black;
+    display: inline;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#caja2 {
+    display: inline;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 90vw;
+    justify-content: center;
+    align-items: center;
+}

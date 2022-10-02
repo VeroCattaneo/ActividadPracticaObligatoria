@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <header> 
+        <nav class="navbar navbar-expand-sm bg-light"> <!--expand significa que la barra no se oculte segun el tamaño, si es lg es para pantalla grande, si es sm es pantalla pequeña, si no pongo nada, va a ir a la opción más chica-->
+            <div class="container-fluid"> <!--container-fluid ocupa todo el ancho de la pagina sin tener margenes, para que el header tenga margen, y padding, le sacamos el fluid-->
+            <a class="navbar-brand" href="#">Codo a Codo</a> <!--a es un link-->
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!--este es el icono de como sale el menu cuando la pantalla esta más chica-->
+            </button> <!--el button navbar es el boton para que se despliegue el menú-->
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--este es el menú, tiene la clase collapse, porque cuando pasa de cierto tamaño el menú colapsa-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--el menu no esta centrado con el codo a codo ni con la barra para buscar, esto es asi por el "me" la m es de margin, y la e es de end, y tiene la opción "auto" con esa opción, lo que hace es que la barra de navegación se separe todo el espacio disponible del lado izquierdo, si lo sacamos, la barra de busquedas queda al lado, o también se puede poner un número, este número va del 1 al 5, más de eso no lo registra-->
+                <!--el "mb" es un margin botom, que es el espacio hacia abajo, lo que hace que no quede centrado-->
+                <!--tambien sale un mb-lg-0, esto quiere decir que el margen de abajo va a ser 0 cuando la pantalla sea lg (grande)-->
+                <!--las medidas las encontramos en la pagina de bootstrap en layout y breakpoints-->
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PHP</a></li>
+
+                                <li><a class="dropdown-item" href="#">Phyton</a></li>
+
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Java</a></li>
+                            </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Inscribite</a> <!--este link esta "disabled" esto significa que si tocamos este icono, no vamos a ir a un link externo-->
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4 mb-4"> 
+        <!--en este main, queremos hacer un "card", que lo vamos a encontrar en bootsrap en "components", se usa un card para cada uno de los div-->
+        <!--si vemos que los card estan muy pegados, podemos agregar una class conteiner-->
+        <div class="card-group">
+            <div class="card">
+              <img src="./imagenes/php.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso Full Stack PHP</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="./imagenes/Python-logo-notext.svg.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso Full Stack Phyton</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="./imagenes/descarga.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso Full Stack Java</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+        </div>
+      
+      
+        <div class="row"><!--contenedor de tipo fila-->
+
+              <div class="col col-md-3"> <!--columna 1-->
+                <div class="card">
+                  <img src="./imagenes/php.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-md-4"> <!--columna 2-->
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-md-5"> <!--columna 3-->
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        Inscribite en Nuestros Cursos
+        <form action="">
+            email
+            Nombre y Apellido
+            Quiero suscribirme al newsletter de Codo a Codo
+            Enviar
+        </form>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/2c1c13218f.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

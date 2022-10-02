@@ -1,0 +1,131 @@
+* /*esto "*" es un selector universal, lo que se ponga aquí va a estar en toda la página*/{
+    margin: 0%;
+    padding: 0%;
+}
+
+.encabezado {
+    background-image: url("./imagenes/header.jpg");
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menuEncabezado {
+    display: flex;
+    margin: 0% 10%;
+    padding-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0% 10%;
+    padding-bottom: 5%;
+}
+
+.masSobreNosotros {
+    margin: 5% 10%;    
+}
+
+h2 {
+    text-align: center;
+    color: gray;
+}
+
+.section1 {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main{
+    margin: 0% 10%;
+    text-align: center;
+}
+
+.anuncio {
+    border: 1px solid rgb(182, 182, 182);
+    margin: 0px;
+    padding: 0%;
+    width: 2000px;
+    height: 350px;
+    text-align: center;
+}
+
+.casasDepas {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(181, 181, 181);
+    background-color: rgb(245, 245, 245);
+    justify-content: space-evenly; 
+    align-items: flex-start;
+}
+
+.titulo {
+    font-size: large;
+}
+
+#info {
+    text-align: left;
+    float: left;
+}
+
+#precio {
+    color: rgb(157, 198, 98);
+    
+}
+
+.boton {
+    border: 1px solid rgb(223, 135, 22);
+    padding: 10px;
+    background-color: rgb(223, 135, 22);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: small;
+    font-weight: 400;
+}
+
+.boton2 {
+    border: 1px solid rgb(113, 177, 31);
+    padding: 10px;
+    background-color: rgb(113, 177, 31);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: right;
+    font-weight: 500;
+	float: right;
+}
+
+#encuentra {
+    color: white;
+    font-size: xx-large;
+    margin: 0% 10%;
+}
+
+.encuentra {
+    background-image: url(./imagenes/encuentra.jpg);
+    height: 50vh;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactanos {
+    border: 1px solid rgb(223, 135, 22);
+    padding: 10px;
+    background-color: rgb(223, 135, 22);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: small;
+    font-weight: 400;
+    margin: 0% 70% 0% 10%;
+    text-align: center;
+    float: left;
+}
+
